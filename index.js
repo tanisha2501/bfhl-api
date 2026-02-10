@@ -151,3 +151,9 @@ else if (key === "AI") {
 app.listen(PORT, "0.0.0.0", () => {
   console.log("Server running on port " + PORT);
 });
+
+// Keep Railway container alive
+setInterval(() => {
+  // no-op
+}, 1000 * 60);
+
