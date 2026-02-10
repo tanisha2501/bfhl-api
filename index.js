@@ -91,6 +91,10 @@ async function aiResponse(question) {
   return "Unknown";
 }
 
+app.get("/", (req, res) => {
+  res.status(200).send("BFHL API is running");
+});
+
 
 
 app.get("/health", (req, res) => {
